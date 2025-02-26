@@ -66,7 +66,7 @@ export default function MagicalConsole() {
 
   return (
     <div className="rounded-xl border border-purple-500/20 bg-purple-500/[0.02] p-6 z-10">
-      <div className="mb-6 flex items-center justify-between">
+      <div className="mb-6 flex flex-col items-center justify-between lg:flex-row">
         <div className="flex items-center gap-2">
           <span className="text-3xl text-purple-200">🪄</span>
           <h3 className="text-lg font-semibold text-purple-200">
