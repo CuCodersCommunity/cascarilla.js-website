@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  .animate-twinkle {
+    animation: twinkle 4s ease-in-out infinite;
+  }
+  .animate-text-shimmer {
+    animation: text-shimmer 2.5s linear infinite;
+  }
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}

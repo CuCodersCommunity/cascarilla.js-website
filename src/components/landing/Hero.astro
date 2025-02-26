@@ -1,0 +1,69 @@
+---
+import { Sparkles, Wand2, Zap } from "lucide-astro";
+---
+
+{/* Hero Section */}
+<section class="relative overflow-hidden px-4 py-20 lg:py-32">
+  {/* Animated background stars */}
+  <div class="absolute inset-0 -z-10">
+    {
+      [...Array(30)].map((_, i) => (
+        <div
+          class="absolute h-0.5 w-0.5 animate-twinkle rounded-full bg-white/80 shadow-[0_0_2px_#fff]"
+          style={{
+            top: `${Math.random() * 100}%`,
+            left: `${Math.random() * 100}%`,
+            animationDelay: `${Math.random() * 3}s`,
+            animationDuration: `${2 + Math.random() * 3}s`,
+          }}
+        />
+      ))
+    }
+  </div>
+
+  <div class="container relative z-10 mx-auto max-w-6xl">
+    <div class="text-center">
+      <div class="inline-block animate-float">
+        <div
+          class="mb-6 inline-flex items-center gap-2 rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-2 text-sm text-purple-300 backdrop-blur-sm transition-colors hover:border-purple-400/50 hover:bg-purple-500/20"
+        >
+          <Sparkles class="h-4 w-4" />
+          <span>Add Magic to your Website</span>
+          <div class="h-1.5 w-1.5 rounded-full bg-purple-400 animate-pulse">
+          </div>
+        </div>
+      </div>
+
+      <h1
+        class="mb-6 text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl"
+      >
+        <span
+          class="animate-text-shimmer bg-[linear-gradient(45deg,#8b5cf6,#ec4899,#f43f5e,#8b5cf6)] bg-[length:200%_auto] bg-clip-text text-transparent"
+        >
+          Cascarilla
+        </span>
+      </h1>
+
+      <p class="mx-auto mb-8 max-w-2xl text-lg text-purple-100/80 sm:text-xl">
+        Summon the magic of JavaScript! Enchant your console with hilarious and
+        mystical messages while keeping your code as sharp as a wizard’s spell.
+      </p>
+
+      <div class="flex flex-col gap-4 sm:flex-row justify-center items-center">
+        <a
+          role="button"
+          href="#get-started"
+          class="group relative max-w-max h-12 overflow-hidden rounded-full bg-purple-600 px-8 transition-all hover:bg-purple-700 hover:shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:scale-105 cursor-pointer flex justify-center items-center"
+        >
+          <span class="relative z-10 flex items-center gap-2">
+            <Wand2 class="h-5 w-5 group-hover:rotate-12 group-hover:mr-1" />
+            Get Started
+            <Zap
+              class="h-4 w-4 transition-transform group-hover:rotate-12 group-hover:ml-1"
+            />
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

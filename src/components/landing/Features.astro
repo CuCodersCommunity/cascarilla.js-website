@@ -1,0 +1,63 @@
+---
+import { Flame, Sparkles, Stars } from "lucide-astro";
+---
+
+{/* Features Section */}
+<section class="px-4 py-20">
+  <div class="container mx-auto max-w-6xl">
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {/* Feature Cards */}
+      <div
+        class="group relative overflow-hidden rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6 transition-all duration-300 hover:bg-purple-500/[0.04] hover:shadow-[0_0_30px_rgba(139,92,246,0.1)] hover:-translate-y-1"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100"
+        >
+        </div>
+        <div class="mb-4 inline-flex rounded-xl bg-purple-500/10 p-3">
+          <Flame class="h-6 w-6 text-purple-400" />
+        </div>
+        <h3 class="mb-2 text-xl font-semibold text-purple-200">
+          Console Magic
+        </h3>
+        <p class="text-purple-200/70">
+          Transform your browser console into a dazzling display with just a simple phrase.
+        </p>
+      </div>
+
+      <div
+        class="group relative overflow-hidden rounded-2xl border border-pink-500/20 bg-pink-500/[0.02] p-6 transition-all duration-300 hover:bg-pink-500/[0.04] hover:shadow-[0_0_30px_rgba(236,72,153,0.1)] hover:-translate-y-1"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100"
+        >
+        </div>
+        <div class="mb-4 inline-flex rounded-xl bg-pink-500/10 p-3">
+          <Stars class="h-6 w-6 text-pink-400" />
+        </div>
+        <h3 class="mb-2 text-xl font-semibold text-pink-200">
+          Effortless Incantations
+        </h3>
+        <p class="text-pink-200/70">
+          Invoke powerful console displays with minimal code - just speak the magic words.
+        </p>
+      </div>
+
+      <div
+        class="group relative overflow-hidden rounded-2xl border border-red-500/20 bg-red-500/[0.02] p-6 transition-all duration-300 hover:bg-red-500/[0.04] hover:shadow-[0_0_30px_rgba(239,68,68,0.1)] hover:-translate-y-1"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100"
+        >
+        </div>
+        <div class="mb-4 inline-flex rounded-xl bg-red-500/10 p-3">
+          <Sparkles class="h-6 w-6 text-red-400" />
+        </div>
+        <h3 class="mb-2 text-xl font-semibold text-red-200">Visual Spellcraft</h3>
+        <p class="text-red-200/70">
+          Cast stunning visual effects in your console with simple, memorable phrases.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
