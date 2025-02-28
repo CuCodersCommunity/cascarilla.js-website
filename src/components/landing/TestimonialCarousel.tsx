@@ -137,7 +137,7 @@ function TestimonialCarousel() {
       </div>
 
       {/* Testimonials */}
-      <div className="relative mx-auto max-w-4xl">
+      <div className="relative mx-auto max-w-4xl overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
