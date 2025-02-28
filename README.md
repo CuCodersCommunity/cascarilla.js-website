@@ -67,8 +67,7 @@ This will generate a new build of Cascarilla.js in the `dist` directory.
 Cascarilla.js was an original idea from Alejandro Rivera and the CuCoders Community members.
 
 ## Constributors
-
-<a href="https://github.com/CuCodersCommunity/cascarilla.js/graphs/contributors">
+<a href="https://github.com/CuCodersCommunity/cascarilla.js-website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=CuCodersCommunity/cascarilla.js" />
 </a>
 
