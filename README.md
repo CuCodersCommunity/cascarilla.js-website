@@ -1,48 +1,75 @@
-# Astro Starter Kit: Basics
+🧹 `Cascarilla.js: The Vibes Library` 🧅
+==============================================
 
-```sh
-npm create astro@latest -- --template basics
+🤙✨ Give Your Website Good Vibes and Aché 🤙✨
+
+Cascarilla.js is a library that brings good vibes and aché to your website, setting you up for success from the start 🌟. By simply importing this library, you'll be starting your project on the right foot 😉.
+
+With Cascarilla.js, you automatically get:
+
+- 🏗️ Less Build Errors 🙌.
+
+- 💥 Fewer Server Crashes. Keep your servers running smoothly, all the time 🕒.
+
+- 🧘‍♂️ Almost No Linting Frustrations. Less stress, more coding joy 😌.
+
+- 💣 No Production Halts. Keep your production environment running 💻.
+
+- 👥 Be part of the Coolest of Cuban Developers 👥.
+
+By using Cascarilla.js your projects will be blessed with good vibes from the start, and you will have rest easily knowing that everything will just be fine. You'll be part of an amazing group of developers also using Cascarilla.js, who value good vibes, aché, and coding awesomeness 😎💅.
+
+So, what are you waiting for? Import Cascarilla.js today and start building amazing things with the coolest of the vibes already granted 🌟!
+
+## 📦 Installation
+
+Cascarilla.js is available on npm, so you can install it with one of the following commands:
+
+```bash
+npm install cascarilla
+pnpm install cascarilla
+yarn add cascarilla
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 📖 Usage
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Once you've installed Cascarilla.js, you can import it into your project and start using its features.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+```javascript
+import { siacaraa } from "cascarilla";
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+siacaraa();
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+That's it! Feel the good vibes and forget about the bugs and linting frustrations. 🌿🌿
 
-## 🧞 Commands
+## 📝 License
 
-All commands are run from the root of the project, from a terminal:
+Cascarilla.js is licensed under the MIT License.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Contributions
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Contributions are always welcome! If you'd like to contribute to Cascarilla.js, please feel free to submit a pull request or open an issue on the GitHub repository.
+
+## Build
+
+To build Cascarilla.js, you can use the following commands:
+
+```bash
+pnpm run build
+```
+
+This will generate a new build of Cascarilla.js in the `dist` directory.
+
+## Authors
+
+Cascarilla.js was an original idea from Alejandro Rivera and the CuCoders Community members.
+
+## Constributors
+
+<a href="https://github.com/CuCodersCommunity/cascarilla.js/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CuCodersCommunity/cascarilla.js" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
