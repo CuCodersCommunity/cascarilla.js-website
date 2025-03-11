@@ -51,3 +51,10 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
+.knewave-regular {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
