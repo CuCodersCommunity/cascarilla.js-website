@@ -52,6 +52,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: Knewave;
+  src: url("Knewave-Regular.ttf");
+}
+
 .knewave-regular {
   font-family: "Knewave", system-ui;
   font-weight: 400;
