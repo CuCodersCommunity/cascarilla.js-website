@@ -1,15 +1,12 @@
 ---
-import { Flame, Sparkles, Stars, CloudFog, Brain, Glasses, PartyPopper } from "lucide-astro";
-import Hero from "./Hero.astro";
+import { Flame, Brain, PartyPopper } from "lucide-astro";
 ---
 
-{/* Features Section */}
 <section class="px-4 py-20">
-  <div class="container mx-auto max-w-6xl">
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {/* Feature Cards */}
+  <div class="container mx-auto">
+    <div class="flex flex-wrap justify-center gap-8">
       <div
-        class="group relative overflow-hidden rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6 transition-all duration-300 hover:bg-purple-500/[0.04] hover:shadow-[0_0_30px_rgba(139,92,246,0.1)] hover:-translate-y-1"
+        class="relative overflow-hidden max-w-[400px] rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6 transition-all duration-300 hover:bg-purple-500/[0.04] hover:shadow-[0_0_30px_rgba(139,92,246,0.1)] hover:-translate-y-1"
       >
         <div
           class="absolute inset-0 bg-gradient-to-br from-purple-500/8 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-100"
@@ -22,15 +19,16 @@ import Hero from "./Hero.astro";
           Peace of mind
         </h3>
         <p class="text-purple-200/70">
-          Embed Cascarilla.js into your website and rest assured everything will be just fine.
+          Embed Cascarilla.js into your website and rest assured everything will
+          be just fine.
         </p>
       </div>
 
       <div
-          class="group relative overflow-hidden rounded-2xl border border-red-500/20 bg-orange-500/[0.02] p-6 transition-all duration-300 hover:bg-red-500/[0.04] hover:shadow-[0_0_30px_rgba(239,131,68,0.1)] hover:-translate-y-1"
+        class="relative overflow-hidden max-w-[400px] rounded-2xl border border-red-500/20 bg-orange-500/[0.02] p-6 transition-all duration-300 hover:bg-red-500/[0.04] hover:shadow-[0_0_30px_rgba(239,131,68,0.1)] hover:-translate-y-1"
       >
         <div
-            class="absolute inset-0 bg-gradient-to-br from-red-500/8 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-100"
+          class="absolute inset-0 bg-gradient-to-br from-red-500/8 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-100"
         >
         </div>
         <div class="mb-4 inline-flex rounded-xl bg-red-500/10 p-3">
@@ -40,12 +38,13 @@ import Hero from "./Hero.astro";
           Fire prove your site
         </h3>
         <p class="text-red-200/70">
-          It is statistically demonstrated that the use of Cascarilla.js results in less crashes in production.
+          It is statistically demonstrated that the use of Cascarilla.js results
+          in less crashes in production.
         </p>
       </div>
 
       <div
-        class="group relative overflow-hidden rounded-2xl border border-pink-500/20 bg-pink-500/[0.02] p-6 transition-all duration-300 hover:bg-pink-500/[0.04] hover:shadow-[0_0_30px_rgba(236,72,153,0.1)] hover:-translate-y-1"
+        class="relative overflow-hidden max-w-[400px] rounded-2xl border border-pink-500/20 bg-pink-500/[0.02] p-6 transition-all duration-300 hover:bg-pink-500/[0.04] hover:shadow-[0_0_30px_rgba(236,72,153,0.1)] hover:-translate-y-1"
       >
         <div
           class="absolute inset-0 bg-gradient-to-br from-pink-500/8 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-100"
@@ -54,11 +53,10 @@ import Hero from "./Hero.astro";
         <div class="mb-4 inline-flex rounded-xl bg-pink-500/10 p-3">
           <PartyPopper class="h-6 w-6 text-pink-400" />
         </div>
-        <h3 class="mb-2 text-xl font-semibold text-pink-200">
-          Be cool
-        </h3>
+        <h3 class="mb-2 text-xl font-semibold text-pink-200">Be cool</h3>
         <p class="text-pink-200/70">
-          By using Cascarilla.js you officially belong to the coolest of Cuban developers, no matter where you are.
+          By using Cascarilla.js you officially belong to the coolest of Cuban
+          developers, no matter where you are.
         </p>
       </div>
     </div>
