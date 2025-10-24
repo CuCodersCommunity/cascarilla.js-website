@@ -2,114 +2,69 @@
 import { Scroll } from "lucide-astro";
 ---
 
-<section class="px-4 py-20" id="get-started">
-  <div class="container mx-auto max-w-6xl">
-    <div class="mb-12 text-center">
-      <h2 class="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-        <span
-          class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"
+<div
+  class="flex flex-col gap-6 rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6"
+>
+  <h3 class="text-xl font-semibold text-purple-200">Usage</h3>
+
+  <div class="flex flex-col gap-4">
+    <p class="text-purple-200/70">
+      Locate your application's root component, then just import <code
+        ><b>cascarilla</b></code
+      > as a regular node package. That's it 😎!
+    </p>
+
+    <p class="text-purple-200/70">
+      This way your blessing will be displayed on your server logs or in the
+      browser's console, depending on where is your root component being
+      rendered.
+    </p>
+
+    <div class="rounded-lg bg-black/50 p-4">
+      <div class="flex items-center justify-between">
+        <code class="text-pink-400">
+          <span class="text-purple-400">import</span>
+          <span class="text-green-400">'cascarilla'</span>;
+        </code>
+        <button
+          class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
+          id="copy-import"
         >
-          Getting Started
-        </span>
-      </h2>
-      <p class="mx-auto max-w-2xl text-lg text-purple-200/70">
-        Begin your magical journey with Cascarilla. Follow these enchanted steps
-        to harness its power.
-      </p>
-    </div>
-
-    <div class="grid gap-8 lg:grid-cols-2 ">
-      {/* Installation */}
-      <div
-        class="rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6"
-      >
-        <h3 class="mb-4 text-xl font-semibold text-purple-200">Installation</h3>
-        <p class="mb-4 text-purple-200/70">
-          Install Cascarilla using your preferred package manager:
-        </p>
-        <div class="mb-6 space-y-4">
-          <div class="rounded-lg bg-black/50 p-4">
-            <div class="flex items-center justify-between">
-              <code class="font-mono text-pink-400">npm install cascarilla</code
-              >
-              <button
-                class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
-                onclick="navigator.clipboard.writeText('npm install cascarilla')"
-              >
-                <Scroll class="h-4 w-4" />
-                <span class="sr-only">Copy to clipboard</span>
-              </button>
-            </div>
-          </div>
-          <div class="rounded-lg bg-black/50 p-4">
-            <div class="flex items-center justify-between">
-              <code class="font-mono text-pink-400">pnpm add cascarilla</code>
-              <button
-                class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
-                onclick="navigator.clipboard.writeText('pnpm add cascarilla')"
-              >
-                <Scroll class="h-4 w-4" />
-                <span class="sr-only">Copy to clipboard</span>
-              </button>
-            </div>
-          </div>
-          <div class="rounded-lg bg-black/50 p-4">
-            <div class="flex items-center justify-between">
-              <code class="font-mono text-pink-400">yarn add cascarilla</code>
-              <button
-                class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
-                onclick="navigator.clipboard.writeText('yarn add cascarilla')"
-              >
-                <Scroll class="h-4 w-4" />
-                <span class="sr-only">Copy to clipboard</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Usage */}
-      <div
-        class="rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6"
-      >
-        <h3 class="mb-4 text-xl font-semibold text-purple-200">Usage</h3>
-        <p class="mb-4 text-purple-200/70">
-          Import and use Cascarilla magical functions in your application:
-        </p>
-        <div class="rounded-lg bg-black/50 p-4">
-          <div class="flex items-center justify-between">
-            <code class="font-mono text-pink-400">
-              <span class="text-purple-400">import</span>
-              {"{ siacaraa }"}{" "}
-              <span class="text-purple-400">from</span>
-              <span class="text-green-400">'cascarilla'</span>;
-            </code>
-            <button
-              class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
-              id="copy-import"
-            >
-              <Scroll class="h-4 w-4" />
-              <span class="sr-only">Copy to clipboard</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="mt-4 rounded-lg bg-black/50 p-4">
-          <code>
-            <span class="text-purple-400"
-              >// Transform your data with magical functions</span
-            >
-            <span class="text-purple-300">siacaraa();</span>
-          </code>
-        </div>
+          <Scroll class="h-4 w-4" />
+          <span class="sr-only">Copy to clipboard</span>
+        </button>
       </div>
     </div>
   </div>
-</section>
 
-<script>
-  const copyImportButton = document.querySelector("#copy-import");
-  copyImportButton?.addEventListener("click", () => {
-    navigator.clipboard.writeText('import { siacaraa } from "cascarilla";');
-  });
-</script>
+  <div class="flex flex-col gap-4">
+    <p class="text-purple-200/70">
+      Alternatively you can also add an old school <b
+        ><code>{"<script>"}</code></b
+      > tag 📼 to your application's entry point, with a link to the <code
+        >cascarilla</code
+      > script, as shown below.
+    </p>
+    <p class="text-purple-200/70">
+      This ensure the blessings stay in the browser 😉.
+    </p>
+    <div class="rounded-lg bg-black/50 p-4">
+      <div class="flex items-center justify-between">
+        <code class="text-pink-400">
+          <span class="text-purple-400">{"<script"}</span>
+          <span class="text-green-400 break-all">
+            src='https://cdn.jsdelivr.net/gh/CuCodersCommunity/cascarilla.js@script/cascarilla.js'
+          </span>
+          <span class="text-purple-400">{"/>"}</span>
+        </code>
+        <button
+          class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
+          id="copy-import"
+        >
+          <Scroll class="h-4 w-4" />
+          <span class="sr-only">Copy to clipboard</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
