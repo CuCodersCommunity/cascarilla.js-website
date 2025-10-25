@@ -3,68 +3,69 @@ import { Scroll } from "lucide-astro";
 ---
 
 <div
-  class="flex flex-col gap-6 rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6"
+    class="flex flex-col gap-6 rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6"
 >
-  <h3 class="text-xl font-semibold text-purple-200">Usage</h3>
+    <h3 class="text-xl font-semibold text-purple-200">Usage</h3>
 
-  <div class="flex flex-col gap-4">
-    <p class="text-purple-200/70">
-      Locate your application's root component, then just import <code
-        ><b>cascarilla</b></code
-      > as a regular node package. That's it 😎!
-    </p>
+    <div class="flex flex-col gap-4">
+        <p class="text-purple-200/70">
+            Locate your application's root component, then just import <code
+                ><b>cascarilla</b></code
+            > as a regular node package. That's it 😎!
+        </p>
 
-    <p class="text-purple-200/70">
-      This way your blessing will be displayed on your server logs or in the
-      browser's console, depending on where is your root component being
-      rendered.
-    </p>
+        <p class="text-purple-200/70">
+            This way your blessing will be displayed on your server logs or in
+            the browser's console, depending on where is your root component
+            being rendered.
+        </p>
 
-    <div class="rounded-lg bg-black/50 p-4">
-      <div class="flex items-center justify-between">
-        <code class="text-pink-400">
-          <span class="text-purple-400">import</span>
-          <span class="text-green-400">'cascarilla'</span>;
-        </code>
-        <button
-          class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
-          id="copy-import"
-        >
-          <Scroll class="h-4 w-4" />
-          <span class="sr-only">Copy to clipboard</span>
-        </button>
-      </div>
+        <div class="rounded-lg bg-black/50 p-4">
+            <div class="flex items-center justify-between">
+                <code class="text-pink-400">
+                    <span class="text-purple-400">import</span>
+                    <span class="text-green-400">'cascarilla'</span>;
+                </code>
+                <button
+                    class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
+                    id="copy-import"
+                >
+                    <Scroll class="h-4 w-4" />
+                    <span class="sr-only">Copy to clipboard</span>
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="flex flex-col gap-4">
-    <p class="text-purple-200/70">
-      Alternatively you can also add an old school <b
-        ><code>{"<script>"}</code></b
-      > tag 📼 to your application's entry point, with a link to the <code
-        >cascarilla</code
-      > script, as shown below.
-    </p>
-    <p class="text-purple-200/70">
-      This ensure the blessings stay in the browser 😉.
-    </p>
-    <div class="rounded-lg bg-black/50 p-4">
-      <div class="flex items-center justify-between">
-        <code class="text-pink-400">
-          <span class="text-purple-400">{"<script"}</span>
-          <span class="text-green-400 break-all">
-            src='https://cdn.jsdelivr.net/gh/CuCodersCommunity/cascarilla.js@script/cascarilla.js'
-          </span>
-          <span class="text-purple-400">{"/>"}</span>
-        </code>
-        <button
-          class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
-          id="copy-import"
-        >
-          <Scroll class="h-4 w-4" />
-          <span class="sr-only">Copy to clipboard</span>
-        </button>
-      </div>
+    <div class="flex flex-col gap-4">
+        <p class="text-purple-200/70">
+            Alternatively you can also add an old school <b
+                ><code>{"<script>"}</code></b
+            > tag 📼 to your application's entry point, with a link to the <code
+                >cascarilla</code
+            > script, as shown below.
+        </p>
+        <p class="text-purple-200/70">
+            This ensure the blessings stay in the browser 😉.
+        </p>
+        <div class="rounded-lg bg-black/50 p-4">
+            <div class="flex items-center justify-between">
+                <code class="text-pink-400">
+                    <span class="text-purple-400">{"<script"}</span>
+                    <span class="text-green-400 break-all">
+                        src='https://cdn.jsdelivr.net/gh/CuCodersCommunity/cascarilla.js@script/index.js'
+                        defer
+                    </span>
+                    <span class="text-purple-400">{"/>"}</span>
+                </code>
+                <button
+                    class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
+                    id="copy-import"
+                >
+                    <Scroll class="h-4 w-4" />
+                    <span class="sr-only">Copy to clipboard</span>
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
