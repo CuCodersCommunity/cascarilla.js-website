@@ -1,40 +1,37 @@
 ---
-import { Terminal } from "lucide-astro";
+import { FileTerminal, SquareTerminal, Terminal } from "lucide-astro";
 ---
 
 <section class="px-4 py-20 z-20">
-  <div class="container mx-auto max-w-6xl">
-    <div class="mb-12 text-center">
-      <h2 class="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-        <span
-          class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"
-        >
-          See the Magic
-        </span>
-      </h2>
-      <p class="mx-auto max-w-2xl text-lg text-purple-200/70">
-        Now check your browser's console by pressing <code
-          class="p-1 bg-purple-400/5 rounded-sm">F12</code
-        >, or check your server's logs, and see the magic 🤩. In either case you
-        should see a little message like the one below, indicating that you
-        have, indeed, been blessed 🙂‍↕️. Now you are vibing like a true master 😁.
-      </p>
-    </div>
-
-    <div
-      class="rounded-xl border border-purple-500/20 bg-purple-500/[0.02] p-6 z-10"
-    >
-      <div class="flex items-center gap-2 mb-4">
-        <Terminal class="text-purple-400 ml-0.5" />
-      </div>
-
-      <div
-        class="h-[100px] rounded-lg border border-purple-500/10 bg-black/50 p-4 font-mono"
-      >
-        <div class="flex h-full items-center text-sm text-purple-300/50">
-          ✨ This website is blessed with Cascarilla.js 💫
+    <div class="container mx-auto max-w-6xl">
+        <div class="mb-12 text-center">
+            <h2 class="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
+                <span
+                    class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"
+                >
+                    See the Magic
+                </span>
+            </h2>
+            <p class="mx-auto max-w-2xl text-lg text-purple-200/70">
+                Now check your browser's console by pressing <code
+                    class="p-1 bg-purple-400/5 rounded-sm">F12</code
+                >, or check your server logs, and see the magic 🤩. In either
+                case you should see a little console message like the one shown
+                below, indicating that you have, indeed, been blessed 🙂‍↕️. Now
+                you are vibing like a true master 😁.
+            </p>
         </div>
-      </div>
+
+        <div
+            class="rounded-xl border border-purple-500/20 bg-purple-500/[0.02] p-6 z-10 animate-float"
+        >
+            <div
+                class="h-[100px] rounded-lg border border-purple-500/10 bg-black/50 p-4 font-mono flex items-center gap-1"
+            >
+                <span class="text-purple-300/50">
+                    ✨ This website is blessed with Cascarilla.js 💫
+                </span>
+            </div>
+        </div>
     </div>
-  </div>
 </section>

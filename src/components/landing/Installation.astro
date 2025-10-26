@@ -3,50 +3,58 @@ import { Scroll } from "lucide-astro";
 ---
 
 <div class="flex flex-col gap-8 mb-12">
-  <div class="rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6">
-    <h3 class="mb-4 text-xl font-semibold text-purple-200">Installation</h3>
-    <p class="mb-4 text-purple-200/70">
-      Install <code>cascarilla</code> using your favorite package manager 🎁.
-    </p>
-    <div class="mb-6 space-y-4">
-      <div class="rounded-lg bg-black/50 p-4">
-        <div class="flex items-center justify-between">
-          <code class="font-mono text-pink-400">npm i cascarilla</code>
-          <button
-            class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
-            onclick="navigator.clipboard.writeText('npm install cascarilla')"
-          >
-            <Scroll class="h-4 w-4" />
-            <span class="sr-only">Copy to clipboard</span>
-          </button>
-        </div>
-      </div>
+    <div
+        class="rounded-2xl border border-purple-500/20 bg-purple-500/[0.02] p-6"
+    >
+        <h3 class="mb-4 text-xl font-semibold text-purple-200">Installation</h3>
+        <p class="mb-4 text-purple-200/70">
+            📦 Install <code>cascarilla</code> using your favorite package manager.
+        </p>
+        <div class="mb-6 space-y-4">
+            <div class="rounded-lg bg-black/50 p-4">
+                <div class="flex items-center justify-between">
+                    <code class="font-mono text-purple-400"
+                        >npm i cascarilla</code
+                    >
+                    <button
+                        class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
+                        onclick="navigator.clipboard.writeText('npm install cascarilla')"
+                    >
+                        <Scroll class="h-4 w-4" />
+                        <span class="sr-only">Copy to clipboard</span>
+                    </button>
+                </div>
+            </div>
 
-      <div class="rounded-lg bg-black/50 p-4">
-        <div class="flex items-center justify-between">
-          <code class="font-mono text-pink-400">pnpm add cascarilla</code>
-          <button
-            class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
-            onclick="navigator.clipboard.writeText('pnpm add cascarilla')"
-          >
-            <Scroll class="h-4 w-4" />
-            <span class="sr-only">Copy to clipboard</span>
-          </button>
-        </div>
-      </div>
+            <div class="rounded-lg bg-black/50 p-4">
+                <div class="flex items-center justify-between">
+                    <code class="font-mono text-purple-400"
+                        >pnpm add cascarilla</code
+                    >
+                    <button
+                        class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
+                        onclick="navigator.clipboard.writeText('pnpm add cascarilla')"
+                    >
+                        <Scroll class="h-4 w-4" />
+                        <span class="sr-only">Copy to clipboard</span>
+                    </button>
+                </div>
+            </div>
 
-      <div class="rounded-lg bg-black/50 p-4">
-        <div class="flex items-center justify-between">
-          <code class="font-mono text-pink-400">yarn add cascarilla</code>
-          <button
-            class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
-            onclick="navigator.clipboard.writeText('yarn add cascarilla')"
-          >
-            <Scroll class="h-4 w-4" />
-            <span class="sr-only">Copy to clipboard</span>
-          </button>
+            <div class="rounded-lg bg-black/50 p-4">
+                <div class="flex items-center justify-between">
+                    <code class="font-mono text-purple-400"
+                        >yarn add cascarilla</code
+                    >
+                    <button
+                        class="ml-2 rounded-md p-1 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
+                        onclick="navigator.clipboard.writeText('yarn add cascarilla')"
+                    >
+                        <Scroll class="h-4 w-4" />
+                        <span class="sr-only">Copy to clipboard</span>
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
