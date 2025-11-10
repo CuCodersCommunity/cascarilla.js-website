@@ -1,42 +1,6 @@
 import { useEffect, useState } from "react";
 import { testimonials } from "../../utils/Testimonials"
 
-// const testimonials2: Testimonial[] = [
-//   {
-//     id: 1,
-//     name: "Sarah Enchanter",
-//     role: "Senior Spellcaster",
-//     avatar: "https://placehold.co/600x400",
-//     quote:
-//       "Siacaraa has revolutionized our magical code transformations. The enchanted functions are pure wizardry!",
-//   },
-//   {
-//     id: 2,
-//     name: "Marcus Thaumaturge",
-//     role: "Code Alchemist",
-//     avatar: "https://placehold.co/600x400",
-//     quote:
-//       "The performance improvements are truly mystical. Our spells execute faster than ever before.",
-//   },
-//   {
-//     id: 3,
-//     name: "Luna Codebinder",
-//     role: "Arcane Developer",
-//     avatar: "https://placehold.co/600x400",
-//     quote:
-//       "The elegant syntax feels like writing in an ancient spellbook. Simply magical!",
-//   },
-//   {
-//     id: 4,
-//     name: "Eldrich Bytecraft",
-//     role: "Magic Systems Architect",
-//     avatar: "https://placehold.co/600x400",
-//     quote:
-//       "Finally, a framework that understands the art of computational sorcery. Outstanding work!",
-//   },
-// ];
-
-
 function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
