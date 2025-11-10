@@ -1,54 +1,48 @@
 import { useEffect, useState } from "react";
+import { testimonials } from "../../utils/Testimonials"
 
-interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  avatar: string;
-  quote: string;
-}
+// const testimonials2: Testimonial[] = [
+//   {
+//     id: 1,
+//     name: "Sarah Enchanter",
+//     role: "Senior Spellcaster",
+//     avatar: "https://placehold.co/600x400",
+//     quote:
+//       "Siacaraa has revolutionized our magical code transformations. The enchanted functions are pure wizardry!",
+//   },
+//   {
+//     id: 2,
+//     name: "Marcus Thaumaturge",
+//     role: "Code Alchemist",
+//     avatar: "https://placehold.co/600x400",
+//     quote:
+//       "The performance improvements are truly mystical. Our spells execute faster than ever before.",
+//   },
+//   {
+//     id: 3,
+//     name: "Luna Codebinder",
+//     role: "Arcane Developer",
+//     avatar: "https://placehold.co/600x400",
+//     quote:
+//       "The elegant syntax feels like writing in an ancient spellbook. Simply magical!",
+//   },
+//   {
+//     id: 4,
+//     name: "Eldrich Bytecraft",
+//     role: "Magic Systems Architect",
+//     avatar: "https://placehold.co/600x400",
+//     quote:
+//       "Finally, a framework that understands the art of computational sorcery. Outstanding work!",
+//   },
+// ];
 
-const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    name: "Sarah Enchanter",
-    role: "Senior Spellcaster",
-    avatar: "https://placehold.co/600x400",
-    quote:
-      "Siacaraa has revolutionized our magical code transformations. The enchanted functions are pure wizardry!",
-  },
-  {
-    id: 2,
-    name: "Marcus Thaumaturge",
-    role: "Code Alchemist",
-    avatar: "https://placehold.co/600x400",
-    quote:
-      "The performance improvements are truly mystical. Our spells execute faster than ever before.",
-  },
-  {
-    id: 3,
-    name: "Luna Codebinder",
-    role: "Arcane Developer",
-    avatar: "https://placehold.co/600x400",
-    quote:
-      "The elegant syntax feels like writing in an ancient spellbook. Simply magical!",
-  },
-  {
-    id: 4,
-    name: "Eldrich Bytecraft",
-    role: "Magic Systems Architect",
-    avatar: "https://placehold.co/600x400",
-    quote:
-      "Finally, a framework that understands the art of computational sorcery. Outstanding work!",
-  },
-];
 
 function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
   const [autoPlay, setAutoPlay] = useState(true);
-  const autoPlayInterval = 5000; // 5 seconds between slides
+  const autoPlayInterval = 5000;
   
   const showNext = () => {
     if (isAnimating) return;
@@ -69,9 +63,8 @@ function TestimonialCarousel() {
       setIsAnimating(false);
     }, 500);
     return () => clearTimeout(timer);
-  }, [currentIndex]);
+  }, [currentIndex]); 
   
-  // Handle automatic movement
   useEffect(() => {
     let interval: NodeJS.Timeout;
     
@@ -88,7 +81,6 @@ function TestimonialCarousel() {
 
   return (
     <div className="relative overflow-hidden px-4">
-      {/* Navigation Buttons */}
       <div className="absolute left-0 top-1/2 z-10 -translate-y-1/2">
         <button
           className="flex justify-center items-center  h-12 w-12 rounded-full text-purple-300 opacity-75 transition-all hover:bg-purple-500/10 hover:opacity-100"
@@ -136,13 +128,12 @@ function TestimonialCarousel() {
         </button>
       </div>
 
-      {/* Testimonials */}
       <div className="relative mx-auto max-w-4xl overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial) => ( 
             <div key={testimonial.id} className="min-w-full px-16">
               <div className="flex flex-col items-center space-y-4">
                 <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-purple-500/20 bg-purple-500/5">
@@ -173,7 +164,6 @@ function TestimonialCarousel() {
         </div>
       </div>
 
-      {/* Dots */}
       <div className="mt-8 flex justify-center gap-2">
         {testimonials.map((_, index) => (
           <button

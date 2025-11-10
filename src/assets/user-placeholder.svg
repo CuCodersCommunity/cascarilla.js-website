@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img"
+    aria-label="User placeholder avatar">
+    <title>User placeholder avatar</title>
+
+    <!-- Tailwind purple-300 silhouette, smaller & centered -->
+    <g fill="#c4b5fd" stroke="none" transform="translate(16,16) scale(0.75)">
+        <!-- head -->
+        <circle cx="64" cy="36" r="22" />
+        <!-- shoulders -->
+        <path d="M24 100c0-20 18-36 40-36s40 16 40 36H24z" />
+    </g>
+
+    <!-- subtle highlight -->
+    <ellipse cx="62" cy="32" rx="6" ry="3" fill="#ffffff" opacity="0.12" transform="translate(16,16) scale(0.75)" />
+</svg>
