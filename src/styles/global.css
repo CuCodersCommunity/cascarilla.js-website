@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tailwindcss";
 
 @keyframes float {
   0%,
@@ -61,5 +60,4 @@ html {
   font-family: "Knewave", system-ui;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 2px;
 }

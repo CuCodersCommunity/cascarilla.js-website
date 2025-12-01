@@ -1,31 +1,31 @@
 import { useEffect, useState } from "react";
-import { testimonials } from "../../utils/Testimonials"
+import { TESTIMONIALS } from "../utils";
 
 function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-
+    
   const [autoPlay, setAutoPlay] = useState(true);
   const autoPlayInterval = 5000;
   
   const showNext = () => {
     if (isAnimating) return;
-    setIsAnimating(true);
-    setCurrentIndex((current) => (current + 1) % testimonials.length);
+    setIsAnimating(true);    
+    setCurrentIndex((current) => (current + 1) % TESTIMONIALS.length);
   };
 
   const showPrevious = () => {
     if (isAnimating) return;
     setIsAnimating(true);
     setCurrentIndex(
-      (current) => (current - 1 + testimonials.length) % testimonials.length
+      (current) => (current - 1 + TESTIMONIALS.length) % TESTIMONIALS.length
     );
   };
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimating(false);
-    }, 500);
+    }, 500); 
     return () => clearTimeout(timer);
   }, [currentIndex]); 
   
@@ -44,7 +44,7 @@ function TestimonialCarousel() {
   }, [autoPlay, isAnimating, currentIndex]);
 
   return (
-    <div className="relative overflow-hidden px-4">
+    <section className="relative overflow-hidden px-4">
       <div className="absolute left-0 top-1/2 z-10 -translate-y-1/2">
         <button
           className="flex justify-center items-center  h-12 w-12 rounded-full text-purple-300 opacity-75 transition-all hover:bg-purple-500/10 hover:opacity-100"
@@ -97,7 +97,7 @@ function TestimonialCarousel() {
           className="flex transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {testimonials.map((testimonial) => ( 
+          {TESTIMONIALS.map((testimonial) => ( 
             <div key={testimonial.id} className="min-w-full px-16">
               <div className="flex flex-col items-center space-y-4">
                 <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-purple-500/20 bg-purple-500/5">
@@ -129,7 +129,7 @@ function TestimonialCarousel() {
       </div>
 
       <div className="mt-8 flex justify-center gap-2">
-        {testimonials.map((_, index) => (
+        {TESTIMONIALS.map((_, index) => (
           <button
             key={index}
             className={`h-2 w-2 rounded-full transition-all ${
@@ -148,8 +148,8 @@ function TestimonialCarousel() {
           </button>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
-export { TestimonialCarousel };
+export default TestimonialCarousel;

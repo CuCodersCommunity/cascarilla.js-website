@@ -1,8 +1,9 @@
 ---
 import { Github, Wand2, Star } from "lucide-astro";
+import { URLS } from "../utils";
 ---
 
-<section class="relative overflow-hidden px-4 py-20 lg:py-32">
+<header class="relative overflow-hidden px-4 py-20 lg:py-32">
   <div class="absolute inset-0 -z-10">
     {
       [...Array(30)].map((_, i) => (
@@ -24,7 +25,7 @@ import { Github, Wand2, Star } from "lucide-astro";
       class="inline-flex items-center gap-2 mb-6 animate-float rounded-full bg-purple-500/5 px-6 py-4 text-sm text-purple-300 backdrop-blur-sm"
     >
       <Star class="h-4 w-4 stroke-1 stroke-amber-300 fill-amber-300" />
-      <span>Add Good Vibes to your Website</span>
+      <span>Add good vibes to your website</span>
     </div>
 
     <h1
@@ -39,7 +40,8 @@ import { Github, Wand2, Star } from "lucide-astro";
 
     <p class="max-w-2xl mx-auto mb-8 text-lg text-purple-100/80 sm:text-xl">
       🤙✨ <b>Cascarilla.js</b> is a library that brings good vibes and <a
-        href="#"><u><i>aché</i></u></a
+        href={URLS.acheSearch}
+        target="_blank"><u><i>aché</i></u></a
       > to your website, setting you up for success from the start 🌟. By simply
       importing this library, you'll be starting your project on the right foot 😉.
     </p>
@@ -55,7 +57,8 @@ import { Github, Wand2, Star } from "lucide-astro";
       </a>
       <a
         role="button"
-        href="https://github.com/CuCodersCommunity/cascarilla.js.git"
+        href={URLS.githubRepo}
+        target="_blank"
         class="relative z-10 flex justify-center items-center gap-2 group max-w-max h-12 rounded-full border-2 border-purple-600 px-6 transition-all hover:border-purple-700 hover:shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:scale-105 cursor-pointer text-white"
       >
         <Github class="h-5 w-5 group-hover:rotate-12 group-hover:mr-1" />
@@ -63,4 +66,4 @@ import { Github, Wand2, Star } from "lucide-astro";
       </a>
     </div>
   </div>
-</section>
+</header>
