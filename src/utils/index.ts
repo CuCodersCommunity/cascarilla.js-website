@@ -18,7 +18,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 1,
     name: "Satoru Iwata",
     role: "Chief Enthusiasm Officer",
-    avatar: "/src/assets/profile-picture-placeholder.svg",
+    avatar: "profile-picture-placeholder.svg",
     quote:
       "By importing Cascarilla.js, you'll be starting your project on the right foot.",
   },
@@ -26,7 +26,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 2,
     name: "Yukihiro Matsumoto",
     role: "Technical Geek",
-    avatar: "/src/assets/profile-picture-placeholder.svg",
+    avatar: "profile-picture-placeholder.svg",
     quote:
       "With Cascarilla.js, you can harness the power of good vibes in your website. From server-side rendering to static sites, our library will get you started on the right path.",
   },
@@ -34,7 +34,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 3,
     name: "Alexis Ohanian",
     role: "Community Ambassador",
-    avatar: "/src/assets/profile-picture-placeholder.svg",
+    avatar: "profile-picture-placeholder.svg",
     quote:
       "Check your browser's console and see the magic happen. You'll know you've been blessed when our little console message appears, indicating that you're vibing like a true master.",
   },
@@ -42,7 +42,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 4,
     name: "Alejandro Rivera",
     role: "Author",
-    avatar: "/src/assets/profile-picture-placeholder.svg",
+    avatar: "profile-picture-placeholder.svg",
     quote:
       "You know all this reviews are AI generated... right?",
   },
@@ -50,7 +50,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 5,
     name: "John Resig",
     role: "Code Maestro",
-    avatar: "/src/assets/profile-picture-placeholder.svg",
+    avatar: "profile-picture-placeholder.svg",
     quote:
       "Cascarilla.js is more than just a library – it's an experience. Do yourself a favor and embrace the power of good vibes in your web development workflow.",
   },
@@ -58,7 +58,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 6 ,
     name: "Cascarilla-kun",
     role: "Mascot in Chief",
-    avatar: "/src/assets/profile-picture-placeholder.svg",
+    avatar: "profile-picture-placeholder.svg",
     quote:
       "I'm not Bun.",
   },
